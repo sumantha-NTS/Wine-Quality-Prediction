@@ -1,0 +1,74 @@
+body {
+     background-image: url('../images/background2.jpg');
+     background-repeat:no-repeat;
+     background-size: cover;
+     background-color: transparent;
+}
+h1 {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 40px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid black;
+  text-transform: uppercase;
+  text-align: center;
+}
+input[type="number"] {
+    font-family:courier;
+    height: 20px;
+    width: 190px;
+    border-radius: 15px;
+    text-align: center;
+}
+input[type="number"]::placeholder {
+    font-weight: lighter;
+    text-align: center;
+}
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 5px;
+    margin: 20px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    cursor: pointer;
+    right: -2px;
+    top: 15px;
+}
+button:hover {
+    color: green;
+}
+input[type=submit] {
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    outline: none;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+input[type=submit]:hover {
+    color: green;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background-color: white;
+}
+.main {
+    float: left;
+    width: 500px;
+    text-align: center;
+    padding-left: 400px;
+}
+.side {
+    font-size: 25px;
+    padding-top: 150px;
+}
+.copy {
+    padding-top: 420px;
+    color: #fff;
+}

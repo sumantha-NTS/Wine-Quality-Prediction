@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Wine Quality</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+</head>
+<body>
+ <div>
+     <a href="{{ url_for('about')}}">
+         <button>ABOUT</button>
+     </a>
+     <h1 class="head">Wine Quality Prediction</h1>
+     <!-- Main Input For Receiving Query to our ML -->
+    <div class="row">
+        <div class="main">
+            <form action="{{ url_for('predict')}}" method="post">
+                <label for="f_acidity" style="font-size:130%;"><b>Fixed Acidity:</b></label><br>
+                <input type="number" name="f_acidity" placeholder="Enter the value" step="0.01" required="required" /><br><br>
+
+                <label for="v_acidity" style="font-size:130%;"><b>Volatile Acidity:</b></label><br>
+                <input type="number" name="v_acidity" placeholder="Enter the value" step="0.001" required="required" /><br><br>
+
+                <label for="citric" style="font-size:130%;"><b>Citric Acid:</b></label><br>
+                <input type="number" name="citric" placeholder="Enter the value" step="0.01" required="required" /><br><br>
+
+                <label for="residual_sugar" style="font-size:130%;"><b>Residual Sugar:</b></label><br>
+                <input type="number" name="residual_sugar" placeholder="Enter the value" step="0.01" required="required" /><br><br>
+
+                <label for="chlorides" style="font-size:130%;"><b>Chlorides:</b></label><br>
+                <input type="number" name="chlorides" placeholder="Enter the value" step="0.001" required="required" /><br><br>
+
+                <label for="total_sulfur" style="font-size:130%;"><b>Total Sulfur Dioxide:</b></label><br>
+                <input type="number" name="total_sulfur" placeholder="Enter the value" step="0.01" required="required" /><br><br>
+
+                <label for="density" style="font-size:130%;"><b>Density:</b></label><br>
+                <input type="number" name="density" placeholder="Enter the value" step="0.001" required="required" /><br><br>
+
+                <label for="ph" style="font-size:130%;"><b>pH:</b></label><br>
+                <input type="number" name="ph" placeholder="Enter the value" step="0.01" required="required" /><br><br>
+
+                <label for="sulphates" style="font-size:130%;"><b>Sulphates:</b></label><br>
+                <input type="number" name="sulphates" placeholder="Enter the value" step="0.01" required="required" /><br><br>
+
+                <label for="alcohol" style="font-size:130%;"><b>Alcohol:</b></label><br>
+                <input type="number" name="alcohol" placeholder="Enter the value" step="0.01" required="required" /><br><br>
+
+                <input type="submit" >
+            </form><br><br>
+        </div>
+        <div class="side">
+            <h2>{{x}}</h2>
+            <div class="copy">
+                <h5>Copyrights <i class="far fa-copyright"></i> Sumantha.NTS</h5>
+            </div>
+        </div>
+    </div>
+ </div>
+</body>
+</html>
